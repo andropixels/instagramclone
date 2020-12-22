@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp">
+    <RelativeLayout
+        android:id="@+id/relativi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profilepicture"
+            android:layout_margin="7dp"
+            android:id="@+id/searchitemprofilepicture"
+            />
+        <TextView
+            android:id="@+id/usernamesearchitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/searchitemprofilepicture"
+            android:layout_margin="15dp"
+            android:text="USERNAME"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <Button
+            android:id="@+id/searchitemfollowbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernamesearchitem"
+            android:layout_toEndOf="@id/searchitemprofilepicture"
+            android:layout_marginLeft="15dp"
+            android:hint="Follow"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@android:color/holo_blue_light"
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

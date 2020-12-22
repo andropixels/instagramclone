@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_margin="20dp"
+               android:src="@drawable/profilepicture"
+               android:id="@+id/pro" />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_toEndOf="@id/pro"
+                      android:layout_marginStart="20dp"
+                      android:layout_margin="20dp"
+                      android:text="username"
+                      android:textSize="20sp"
+                      android:id="@+id/use"
+
+                      />
+
+
+
+       <ImageView
+           android:id="@+id/posthomepragment"
+           android:layout_width="match_parent"
+           android:layout_height="300dp"
+           android:src="@drawable/profilepicture"
+           android:layout_below="@id/pro"
+           />
+
+        <EditText
+            android:id="@+id/cption"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/posthomepragment"
+            android:layout_above="@id/likebtn"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="write your caption"
+            android:textSize="50sp"
+            android:textStyle="bold"
+
+            />
+             <ImageView
+                 android:id="@+id/likebtn"
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:layout_below="@id/posthomepragment"
+                 android:layout_margin="10dp"
+                 android:src="@drawable/heart"
+                 android:layout_marginTop="30dp"
+
+                 />
+
+        <ImageView
+            android:id="@+id/savepicture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/likebtn"
+            android:layout_margin="10dp"
+            android:src="@drawable/savee"
+            android:layout_below="@id/posthomepragment"
+
+
+            />
+
+
+
+
+
+
+
+</RelativeLayout>

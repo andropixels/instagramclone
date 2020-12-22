@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.login"
+    android:background="@drawable/backui"
+
+    >
+    <ImageView
+        android:id="@+id/instalogo"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:src="@drawable/instalogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        />
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/instalogo"
+        android:layout_centerHorizontal="true"
+        android:hint="email"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+
+        android:layout_marginTop="22dp"
+        android:inputType="textEmailAddress"
+
+        />
+
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtemail"
+        android:layout_centerHorizontal="true"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+
+        android:layout_marginTop="22dp"
+        />
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/holo_purple"
+        android:hint="LOGIN"
+        android:textSize="15sp"
+        />
+
+
+     <Button
+         android:id="@+id/createnewaccount"
+         android:layout_width="300dp"
+         android:layout_height="50dp"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:hint="create new account"
+         android:background="@android:color/transparent"
+         android:textSize="20sp"
+         android:textColor="@android:color/holo_orange_light"
+
+         />
+
+</RelativeLayout>

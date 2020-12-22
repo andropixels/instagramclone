@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.login"
+    android:background="@drawable/backui"
+
+    >
+
+    <ImageView
+        android:id="@+id/instalogo"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/instalogo"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/edtFULLname"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/instalogo"
+        android:layout_centerHorizontal="true"
+        android:hint="Full Name"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+
+
+        />
+    <EditText
+        android:id="@+id/edtUSERNAME"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtFULLname"
+        android:layout_centerHorizontal="true"
+        android:hint="username"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edtEMAIL"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtUSERNAME"
+        android:layout_centerHorizontal="true"
+        android:hint="Mailid"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/black"
+
+        android:textSize="20sp"
+
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/edtPASSWORD"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtEMAIL"
+        android:layout_centerHorizontal="true"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+
+        android:layout_marginTop="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="95dp"
+        android:background="@android:color/holo_purple"
+        android:hint="SIGNUP"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="15sp"
+
+        />
+
+    <Button
+        android:id="@+id/alreadyhaveaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+
+
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:hint="already have a account, login here"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/transparent"
+
+
+        />
+
+
+
+</RelativeLayout>
